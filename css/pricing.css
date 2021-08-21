@@ -1,0 +1,101 @@
+.pricing-content {
+	height: 1080px;
+	background-image: url("../images/pricing.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #fff;
+	text-align: center;
+}
+.pricing-header {
+	padding-top: 80px;
+	margin-bottom: 110px;
+	font-size: 60px;
+	font-family: "Roboto";
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+}
+.plans-list {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+.plan-list-header {
+	font-size: 50px;
+	font-family: "Roboto";
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+}
+.plan-list {
+	margin-top: 90px;
+}
+.plan-list-item {
+	margin-bottom: 35px;
+	font-size: 35px;
+	font-family: "Roboto";
+	font-weight: 500;
+	list-style-type: none;
+}
+.plan-list:last-child {
+	margin-bottom: 0 !important;
+}
+
+@media (max-width: 1200px) {
+	.pricing-content {
+		height: auto !important;
+	}
+	.plans-list {
+		flex-direction: column;
+		padding-bottom: 30px;
+	}
+
+	.plans-list .plan-list {
+		margin-top: 10px;
+	}
+
+	.plan-list-item:last-child {
+		margin-bottom: 0 !important;
+	}
+
+	.plan-list-header {
+		margin-top: 50px;
+	}
+}
+
+@media (max-width: 900px) {
+	.plans-list-item {
+		width: 100%;
+	}
+	.plans-list-item:first-child {
+		text-align: center;
+	}
+	.plans-list-item:nth-child(2) {
+		margin-left: auto;
+	}
+	.plans-list-item:last-child {
+		text-align: center;
+	}
+}
+
+@media (max-width: 700px) {
+	.pricing-header {
+		width: min-content;
+		margin-left: auto;
+		margin-right: auto;
+		font-size: 45px;
+	}
+
+	.pricing-header span {
+		margin: 10px 0;
+	}
+
+	.plan-list-header {
+		font-size: 35px;
+	}
+
+	.plan-list-item {
+		font-size: 25px;
+	}
+}

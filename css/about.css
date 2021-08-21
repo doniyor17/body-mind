@@ -1,0 +1,43 @@
+.about-content {
+	height: 1080px;
+	background-image: url("../images/about.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+.about-header {
+	padding-top: 80px;
+	text-align: center;
+}
+
+
+.word {
+	margin-right: 7px;
+	color: #00b3f9 !important;
+	font-family: "Roboto";
+	font-size: 50px;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: uppercase;
+	
+}
+.about-text {
+	margin: 80px auto 0;
+	font-family: "Roboto";
+	font-size: 30px;
+	font-style: normal;
+	font-weight: 500;
+	color: #fff;
+}
+.odd {
+	display: block;
+	margin: 25px 0 !important;
+	color: #fff !important;
+}
+
+@media (max-width: 750px) {
+	.about-content {
+		height: auto;
+		padding-bottom: 30px;
+	}
+}

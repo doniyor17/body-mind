@@ -1,0 +1,361 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+.container {
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+#nav {
+	position: relative;
+	z-index: 5;
+	background-color: #000;
+}
+.sticky-navbar {
+	position: fixed !important;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	box-shadow: 0 5px 1px #000;
+}
+.site-nav__list {
+	display: flex;
+	align-items: center;
+}
+.brand {
+	text-decoration: none;
+}
+.brand-body,
+.brand-mind {
+	font-family: "Roboto";
+	font-size: 64px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #00b3f9;
+}
+.brand-mind {
+	color: #ddd !important;
+}
+.site-nav__mobile {
+	display: none;
+}
+.site-nav__links {
+	margin-left: auto;
+}
+.site-nav__link {
+	margin: 0 25px;
+	font-family: "Poppins";
+	font-size: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #00b3f9;
+}
+.site-nav__link:hover {
+	color: #fff;
+}
+
+.site-nav__link.activelink {
+	color: #fff;
+}
+.home {
+	margin-left: 0;
+	margin-right: 25px;
+}
+.contacts {
+	margin-left: 25px;
+	margin-right: 0;
+}
+.main-content {
+	height: 100vh;
+	background-image: url("../images/home.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	position: relative;
+	text-align: right;
+}
+.main-content__text {
+	height: auto !important;
+	width: 788px;
+	position: absolute;
+	right: 10%;
+	bottom: 20%;
+}
+.main-content__text--header {
+	font-family: "Play";
+	font-size: 85px;
+	font-weight: 700;
+	color: #ddd;
+}
+.main-content__text--proverb {
+	font-family: "Play";
+	font-size: 85px;
+	font-weight: 700;
+	line-height: 100px;
+	color: #00b3f9;
+}
+
+@media (max-width: 1740px) {
+	.container {
+		max-width: 1550px;
+	}
+	.main-content__text--header {
+		font-size: 65px;
+	}
+	.main-content__text--proverb {
+		font-size: 65px;
+	}
+}
+@media (max-width: 1640px) {
+	.container {
+		max-width: 1400px;
+	}
+	.brand-body,
+	.brand-mind {
+		font-size: 50px;
+	}
+	.site-nav__links {
+		margin-left: auto;
+	}
+	.site-nav__link {
+		margin: 0 15px;
+		font-size: 26px;
+	}
+	.home {
+		margin-left: 0;
+		margin-right: 15px;
+	}
+	.contacts {
+		margin-left: 15px;
+		margin-right: 0;
+	}
+	.main-content__text {
+		width: 600px;
+	}
+	.main-content__text--header {
+		font-size: 56px;
+	}
+	.main-content__text--proverb {
+		font-size: 56px;
+	}
+}
+@media (max-width: 1540px) {
+	.container {
+		max-width: 1350px;
+	}
+}
+@media (max-width: 1420px) {
+	.container {
+		max-width: 1200px;
+	}
+	.main-content__text {
+		width: 500px;
+	}
+	.main-content__text--header {
+		font-size: 45px;
+	}
+	.main-content__text--proverb {
+		font-size: 45px;
+	}
+}
+@media (max-width: 1400px) {
+	.container {
+		max-width: 990px;
+	}
+	.brand-body,
+	.brand-mind {
+		font-size: 40px;
+	}
+	.site-nav__link {
+		margin: 0 10px;
+		font-size: 20px;
+	}
+	.home {
+		margin-left: 0;
+		margin-right: 10px;
+	}
+	.contacts {
+		margin-left: 10px;
+		margin-right: 0;
+	}
+	.main-content__text {
+		width: 500px;
+	}
+	.main-content__text--header {
+		font-size: 40px;
+	}
+	.main-content__text--proverb {
+		font-size: 40px;
+	}
+}
+@media (max-width: 1020) {
+	.container {
+		max-width: 900px;
+	}
+	.brand-body,
+	.brand-mind {
+		font-size: 30px;
+	}
+	.site-nav__link {
+		margin: 0 8px;
+		font-size: 16px;
+	}
+	.main-content__text {
+		width: 400px;
+	}
+	.main-content__text--header {
+		font-size: 32px;
+	}
+	.main-content__text--proverb {
+		font-size: 32px;
+	}
+}
+@media (max-width: 950px) {
+	.container {
+		max-width: 900px;
+	}
+	.main-content__text {
+		width: 400px;
+	}
+	.main-content__text--header {
+		font-size: 32px;
+	}
+	.main-content__text--proverb {
+		font-size: 32px;
+	}
+}
+@media (max-width: 920px) {
+	.main-content {
+		background-position: center left -100px;
+	}
+	.container {
+		max-width: 750px;
+	}
+	.main-content__text {
+		width: 380px;
+	}
+	.main-content__text--header {
+		font-size: 30px;
+	}
+	.main-content__text--proverb {
+		font-size: 30px;
+	}
+	.brand > span {
+		font-size: 22px;
+	}
+}
+@media (max-width: 850px) {
+	.container {
+		max-width: 700px;
+	}
+	.site-nav__links {
+		display: none;
+	}
+	.site-nav__mobile {
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 99;
+		text-align: center;
+		background-color: rgb(0, 0, 0);
+		font-size: 40px;
+	}
+	.site-nav__link {
+		color: #36afe7;
+	}
+	.mobile-link {
+		color: #00b3f9;
+	}
+	#button {
+		margin-left: auto;
+		padding-top: 10px;
+	}
+	#button > span {
+		display: block;
+		width: 40px;
+		height: 5px;
+		margin-bottom: 10px;
+		color: transparent;
+		background-color: #fff;
+	}
+	.hide {
+		transform: translateY(-500px);
+		transition: 0.7s ease;
+	}
+	.show {
+		transform: translateY(0);
+		transition: 0.7s ease;
+	}
+	#toggler1 {
+		transform: translateX(47%);
+		padding-top: 10px;
+	}
+	.toggler > span {
+		display: block;
+		width: 40px;
+		height: 5px;
+		margin-bottom: 10px;
+		color: transparent;
+		background-color: #fff;
+	}
+	.mobile-link {
+		display: block;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-family: "Roboto";
+	}
+
+	.main-content__text {
+		width: 380px;
+	}
+	.main-content__text--header {
+		font-size: 30px;
+	}
+	.main-content__text--proverb {
+		font-size: 30px;
+	}
+}
+@media (max-width: 740px) {
+	.container {
+		max-width: 650px;
+	}
+	.main-content__text {
+		width: 380px;
+	}
+	.main-content__text--header {
+		font-size: 30px;
+	}
+	.main-content__text--proverb {
+		font-size: 30px;
+	}
+}
+@media (max-width: 690px) {
+	.container {
+		max-width: 600px;
+	}
+	.main-content__text {
+		width: auto !important;
+	}
+	.main-content__text--header {
+		font-size: 30px;
+	}
+	.main-content__text--proverb {
+		font-size: 30px;
+	}
+}
+@media (max-width: 500px) {
+	.main-content__text {
+		bottom: 10%;
+	}
+}

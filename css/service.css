@@ -1,0 +1,124 @@
+.service-content {
+	height: 1080px;
+	background-image: url("../images/service.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	color: #fff;
+	text-align: center;
+}
+.service-header {
+	text-transform: uppercase;
+}
+.service-content__service-lists {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	list-style: none;
+}
+.blue {
+	color: #00b3f9;
+}
+.service-header {
+	padding-top: 95px;
+	margin-bottom: 60px;
+	font-family: "Roboto";
+	font-size: 40px;
+	font-weight: 600;
+	text-align: center;
+	color: #00b3f9;
+}
+.fitness,
+.add,
+.nutrition {
+	margin-bottom: 40px;
+	font-family: "Roboto";
+	font-size: 42px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.add {
+	margin-top: 40px;
+}
+.first-service-list-item {
+	margin-bottom: 30px;
+	font-size: 26px;
+	margin-left: 60px;
+	font-family: "Roboto";
+	text-transform: uppercase;
+	list-style-type: none;
+}
+.third {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media (max-width: 1080px) {
+	.service-align {
+		max-width: 100%;
+	}
+	.first {
+		text-align: center;
+	}
+	.second {
+		text-align: center;
+	}
+	.service-content {
+		text-align: center;
+		height: auto;
+	}
+	.first-service-list-item {
+		margin-left: 0;
+	}
+	.third {
+		width: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media (max-width: 850px) {
+	.service-align {
+		max-width: 100%;
+	}
+	.first {
+		text-align: left;
+	}
+	.second {
+		text-align: left;
+	}
+	.service-content {
+		text-align: left;
+		height: auto;
+	}
+	.third {
+		width: auto;
+		margin-left: 0;
+		margin-right: auto;
+	}
+	.first-service-list-item {
+		margin-left: 30px;
+	}
+	.first-service-list-item {
+		font-size: 22px !important;
+	}
+}
+@media (max-width: 515px) {
+	.fitness > span,
+	.nutrition > span,
+	.add > span {
+		font-size: 28px;
+	}
+	.first-service-list-item {
+		font-size: 18px !important;
+	}
+}
+@media (max-width: 455px) {
+	.fitness > span,
+	.nutrition > span,
+	.add > span {
+		font-size: 24px;
+	}
+	.first-service-list-item {
+		font-size: 16px !important;
+	}
+}
